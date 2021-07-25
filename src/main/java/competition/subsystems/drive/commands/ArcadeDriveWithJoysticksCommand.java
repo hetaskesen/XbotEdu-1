@@ -9,6 +9,7 @@ public class ArcadeDriveWithJoysticksCommand extends BaseCommand {
 
     @Inject
     public ArcadeDriveWithJoysticksCommand(DriveSubsystem driveSubsystem) {
+            
     }
 
     @Override
