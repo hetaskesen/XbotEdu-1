@@ -5,6 +5,7 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
 import competition.electrical_contract.ElectricalContract;
+import competition.subsystems.drive.commands.ArcadeDriveWithJoysticksCommand;
 import xbot.common.command.BaseSubsystem;
 import xbot.common.controls.actuators.XCANTalon;
 import xbot.common.injection.wpi_factories.CommonLibFactory;
@@ -41,7 +42,10 @@ public class DriveSubsystem extends BaseSubsystem {
         // to
         // the value of leftPower:
         frontLeft.simpleSet(leftPower);
+        frontRight.simpleSet(rightPower);
     }
+
+   // public void arcadeDrive()
     
     @Override
     public void periodic() {
